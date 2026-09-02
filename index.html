@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Panel de Ventas - La Casa del Fútbol</h1>
+    
+    <form id="formularioPedido">
+        <input type="text" id="nombreCliente" placeholder="Nombre del cliente" required>
+        
+        <select id="tallaCamiseta">
+            <option value="S">Talla S</option>
+            <option value="M">Talla M</option>
+            <option value="L">Talla L</option>
+            <option value="XL">Talla XL</option>
+        </select>
+        
+        <label>
+            <input type="checkbox" id="pagoEfectivo"> Pagado en efectivo
+        </label>
+        
+        <button type="submit">Añadir Pedido</button>
+    </form>
+
+    <div id="resumenTallas" class="resumen-container"></div>
+
+    <h2>Control de Stock y Pedidos</h2>
+    <ul id="listaPedidos"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
